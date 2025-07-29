@@ -1,0 +1,663 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-add-product-with-api-post_add-product_positive",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "User add Product with api POST_add-product_Positive",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2988100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 487732099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User send a POST request to \"/add-product\" request with name, desciption, price, discount, file",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176707499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User Validate the addProductResponse statuscode should be 200, status true and message \"Product Added successfully.\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9362098
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-add-product-with-api-post_add-product_-no-name_-negative",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "User add Product with api POST_add-product_ no name_ Negative",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 994000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 411245498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User send a POST request to \"/add-product\" request with desciption, price, discount, file",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16890398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User Validate the addProductResponse statuscode for product activities should be 400, status false and message \"Add proper parameter first!\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1446600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-add-product-with-api-post_add-product_-no-description-negative",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "User add Product with api POST_add-product_ no description Negative",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 456900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249950799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "User send a POST request to \"/add-product\" request with name, price, discount, file",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "User Validate the addProductResponse statuscode for product activities should be 400, status false and message \"Add proper parameter first!\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1050399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-add-product-with-api-post_add-product_-no-price-negative",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "User add Product with api POST_add-product_ no price Negative",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 392499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 514532799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User send a POST request to \"/add-product\" request with name, desciption, discount, file",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16108199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "User Validate the addProductResponse statuscode for product activities should be 400, status false and message \"Add proper parameter first!\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 609198
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-add-product-with-api-post_add-product_-no-discount-negative",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "User add Product with api POST_add-product_ no discount Negative",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 353000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227316799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "User send a POST request to \"/add-product\" request with name, desciption, price, file",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19102500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "User Validate the addProductResponse statuscode for product activities should be 400, status false and message \"Add proper parameter first!\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:164"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 867099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-add-product-with-api-post_add-product_-no-file-negative",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "User add Product with api POST_add-product_ no file Negative",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 440099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225504199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "User send a POST request to \"/add-product\" request with name, desciption, price, discount",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:140"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17402698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "User Validate the addProductResponse statuscode for product activities should be 400, status false and message \"Add proper parameter first!\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:164"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3620600,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -Something went wrong!\n    +Add proper parameter first!\n\n    at World.<anonymous> (C:\\Users\\karth\\Registration-Login-and-CRUD-Action-using-MERN-stack\\backend\\tests\\step_definitions\\DashboardSteps.js:166:45)"
+            },
+            "embeddings": [
+              {
+                "data": "4p2MIFN0ZXAgZmFpbGVkOgoKZXhwZWN0ZWQgeyDigKYoMikgfSB0byBoYXZlIHByb3BlcnR5ICdlcnJvck1lc3NhZ2UnIG9mICdBZGQgcHJvcGVyIHBhcmFtZXRlciBmaXJzdCEnLCBidXQgZ290ICdTb21ldGhpbmcgd2VudCB3cm9uZyEn",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 31
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-get-product-details-with-api-get_get-product_positive",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "User get Product details with api GET_get-product_Positive",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 402000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266297299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "User send a GET request to \"/get-product\" to fetch all data",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220070098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "User Validate the getProductResponse statuscode for product activities should be 200, status true, with data and title \"Product retrived.\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:201"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4218200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 37
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-delete-product-with-api-post_delete-product_positive",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "User delete Product with api POST_delete-product_Positive",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1223999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 305316799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "User send a GET request to \"/get-product\" to fetch all data",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 291978599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 47,
+            "name": "User send a POST request to \"/delete-product\" to the first element in the get product list",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:218"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108069599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "User Validate the deleteProductResponse statuscode for product activities should be 200, status true and title \"Product deleted.\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:239"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1187600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 44
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-delete-product-with-api-post_delete-product_no-product-id_negative",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "User delete Product with api POST_delete-product_No Product ID_Negative",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9333599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 272708699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "User send a POST request to \"/delete-product\"  without  product id",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:253"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7854198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "User Validate the deleteProductResponse statuscode for product activities should be 400, status false and title \"Add proper parameter first!\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:246"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1005299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 50
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing-for-curd-functionality-in-dashboard;user-delete-product-with-api-post_delete-product_invalid-id",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "User delete Product with api POST_delete-product_invalid ID",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1047599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "User send a POST request to \"/login\" request with correct credentials",
+            "match": {
+              "location": "tests\\step_definitions\\LoginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 297203899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "User send a POST request to \"/delete-product\" with invalid ID",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:274"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113155799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "User Validate the deleteProductResponse statuscode for product activities should be 200, status true and title \"Product deleted.\"",
+            "match": {
+              "location": "tests\\step_definitions\\DashboardSteps.js:239"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1584298
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 55
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing-for-curd-functionality-in-dashboard",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing for CURD functionality in dashboard",
+    "tags": [],
+    "uri": "tests\\features\\DashboardFunctions.feature"
+  }
+]

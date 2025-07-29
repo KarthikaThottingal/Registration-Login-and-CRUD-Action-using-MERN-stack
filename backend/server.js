@@ -6,8 +6,19 @@ var cors = require('cors');
 var multer = require('multer'),
   bodyParser = require('body-parser'),
   path = require('path');
-var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/productDB");
+const  mongoose = require("mongoose");
+// change into my MongoDB value
+
+//mongoose.connect("mongodb://localhost/productDB");
+
+mongoose.connect("mongodb+srv://karthikathottingalgerman:Testing1Test@cluster0.kfgzs77.mongodb.net/productDB", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log("✅ Connected to MongoDB Atlas"))
+.catch(err => console.error("❌ MongoDB connection error:", err));
+
+
 var fs = require('fs');
 var product = require("./model/product.js");
 var user = require("./model/user.js");
