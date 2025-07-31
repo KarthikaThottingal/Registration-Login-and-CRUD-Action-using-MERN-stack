@@ -7,11 +7,14 @@ var multer = require('multer'),
   bodyParser = require('body-parser'),
   path = require('path');
 const  mongoose = require("mongoose");
+const dotenv = require('dotenv');
+
+dotenv.config();
 // change into my MongoDB value
 
-//mongoose.connect("mongodb://localhost/productDB");
-
-mongoose.connect("mongodb+srv://karthikathottingalgerman:Testing1Test@cluster0.kfgzs77.mongodb.net/productDB", {
+const uri = `mongodb+srv://${process.env.DBUserName}:${process.env.DBPwd}@cluster0.kfgzs77.mongodb.net/productDB`;
+console.log("\n\n uri is  :", uri);
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })

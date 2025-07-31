@@ -40,6 +40,8 @@ Clone or download this repository
 2. `npm install`
 3. `cd Registration-and-Login-using-MERN-stack/frontend`
 4. `npm install`
+5. `cd Registration-and-Login-using-MERN-stack/testremkarthika`
+6. `npm install`
 
 ### To Run
 To run node server
